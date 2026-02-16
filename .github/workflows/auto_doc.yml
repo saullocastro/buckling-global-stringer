@@ -24,9 +24,9 @@ jobs:
 
       - name: Generate documentation
         run: |
-          mkdir -p doc_src/api
-          cp README.md doc_src/index.md
-          pdoc main.py -d markdown -o doc_src/api
+          mkdir -p docs/api
+          cp README.md docs/index.md
+          pdoc main.py -d markdown -o docs/api
 
       - name: Build documentation
         run: mkdocs build
