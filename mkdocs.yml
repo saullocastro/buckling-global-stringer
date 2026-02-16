@@ -1,0 +1,6 @@
+site_name: buckling-global-stringer
+nav:
+  - Home: index.md
+  - API Reference: api/main.md
+theme:
+  name: material

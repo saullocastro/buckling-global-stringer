@@ -20,14 +20,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pdoc
-          pip install numpy pandas
+          pip install "pdoc[numpy]" mkdocs mkdocs-material numpy pandas
 
       - name: Generate documentation
-        run: pdoc --html --force -o docs main.py
+        run: |
+          mkdir -p doc_src/api
+          cp README.md doc_src/index.md
+          pdoc main.py --markdown -o doc_src/api
+
+      - name: Build documentation
+        run: mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./site
