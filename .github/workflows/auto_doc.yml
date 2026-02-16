@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir -p doc_src/api
           cp README.md doc_src/index.md
-          pdoc main.py --markdown -o doc_src/api
+          pdoc main.py -d markdown -o doc_src/api
 
       - name: Build documentation
         run: mkdocs build

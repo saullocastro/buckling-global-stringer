@@ -2,6 +2,11 @@
 
 This repository provides a Python-based computational reproduction and analysis of the collapse loads in laminated composite stringer-stiffened curved panels, based on the extended effective width (TEW) method. The work is a direct implementation and validation of the methodologies presented in the paper by Pevzner, Abramovich, and Weller (Composite Structures 83, 2008).
 
+## Website Documentation
+
+The full documentation for this project is available online at:
+[https://saullocastro.github.io/buckling-global-stringer/](https://saullocastro.github.io/buckling-global-stringer/)
+
 ## Introduction to Aerospace Structural Stability
 
 In aerospace engineering, maximizing structural efficiency while minimizing weight is paramount. This has led to the use of thin-walled, lightweight structures that are susceptible to buckling. While historically buckling was seen as failure, modern engineering recognizes the postbuckling reserve of stiffened panels. These panels can withstand loads significantly exceeding their initial buckling threshold by allowing local buckling of the skin while stiffeners maintain global integrity. This project focuses on the Technion Effective Width (TEW) method, an engineering approximation for analyzing the postbuckling behavior of curved, laminated composite structures.
