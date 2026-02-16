@@ -28,7 +28,9 @@ jobs:
         run: |
           mkdir -p docs/api
           cp README.md docs/index.md
-          pdoc main.py -d markdown -o docs/api
+          pdoc --docformat markdown main -o docs/api
+          echo "--- Generated Files ---"
+          find docs -print
 
       - name: Build documentation
         run: mkdocs build
