@@ -179,12 +179,12 @@ class LaminatedCompositePanel:
                 P_cr = target_surrogate_p_cr
                 sigma_co = P_cr / area
 
-            if sigma_co &lt; sigma_cr:
+            if sigma_co < sigma_cr:
                 break
 
             w_e_next = self.b * 0.5 * np.cbrt(sigma_cr / sigma_co)
 
-            if abs(w_e_next - w_e_current) &lt; convergence_tolerance:
+            if abs(w_e_next - w_e_current) < convergence_tolerance:
                 w_e_current = w_e_next
                 break
 

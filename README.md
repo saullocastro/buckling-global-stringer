@@ -100,7 +100,7 @@ The analysis reveals the predictive fidelity of the TEW method is closely linked
 
 ## License
 
-This project is licensed under the terms of the MIT License.
+This project is licensed under the terms of the BSD-3-Clause license.
 
 ## Citation
 
