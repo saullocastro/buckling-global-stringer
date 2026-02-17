@@ -26,7 +26,9 @@ jobs:
 
       - name: Prepare documentation files
         run: |
+          mkdir -p docs/api
           cp README.md docs/index.md
+          echo "::: main" > docs/api/main.md
 
       - name: Build documentation
         run: mkdocs build
