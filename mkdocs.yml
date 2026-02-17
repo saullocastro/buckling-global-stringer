@@ -15,3 +15,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+plugins:
+  - search
+  - mkdocstrings
